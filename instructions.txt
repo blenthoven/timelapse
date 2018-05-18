@@ -1,0 +1,30 @@
+python3 at least
+
+Usage:
+    python3.5 timelapse [path] [rate] [name]
+
+-path: path to the folder containing the videos files. Videos have to be a name so they can be sorted alphabeticaly in the order you want them to be assemble
+
+-rate: the interval of picture to save. For example, if you want "every ten pictures", the first picture of the video will be saved in the timelapse, the next one will be the 11th, then the 21st and so on. When the end of the first file is reached, the second file will begin at the first picture, then the 11th... You get the idea
+
+-name: the name and path of the final video, for example : "/home/louis/Videos/render_timelapse/video.avi". The path has to exist and the extension has to be .avi. Feel free to update the code for your use.
+
+------------
+
+Example :
+
+~/Videos/tmp_vids/
+    ./DSC_0001.mov
+    ./DSC_0002.mov
+    ./DSC_0003.mov
+
+python3.5 /home/louis/Videos/tmp_vids/ 15 /home/louis/Videos/render_timelapse/video.avi
+
+------------
+
+Output :
+Either you get an error output, either the script won't display anything for a few seconds and then will display the progress for each video.
+
+------------
+
+This is scripted in python, with no thread or material acceleration. Be patient.
